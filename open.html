@@ -25,9 +25,34 @@
       margin: auto;
       box-shadow: 0 0 10px #ba68c8;
     }
+    #popup-message {
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(206, 147, 216, 0.9); /* pastel purple */
+      color: white;
+      padding: 20px 30px;
+      border-radius: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      opacity: 1;
+      z-index: 999;
+      animation: fadeOut 3s ease-out 1s forwards;
+    }
+    
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    }
+
   </style>
 </head>
 <body>
+  <div id="popup-message">I love you sayang ♡</div>
+
   <div class="letter">
     <h2>Prepare tissue pleaseee ⎛⎝( ` ᢍ ´ )⎠⎞ᵐᵘʰᵃʰᵃ</h2>
     <p>
