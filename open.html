@@ -41,12 +41,23 @@
       top: -30px;
       right: -30px;
     }
+    .animated-letter {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInLetter 1.5s ease-out forwards;
+    }
+    @keyframes fadeInLetter {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   
   </style>
 </head>
 <body>
 
-  <div class="letter">
+  <div class="letter animated-letter">
     <img src="images/deco-left.png" class="deco left">
     <img src="images/deco-right.png" class="deco right">
 
