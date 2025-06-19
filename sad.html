@@ -37,15 +37,20 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      animation: shakeSad 0.5s ease-in-out 2;
+      animation: shakeSad 0.8s ease-in-out 2;
     }
-    @keyframes shakeSad {
-      0% { transform: translate(0, 0); }
-      20% { transform: translate(-5px, 0); }
-      40% { transform: translate(5px, 0); }
-      60% { transform: translate(-5px, 0); }
-      80% { transform: translate(5px, 0); }
-      100% { transform: translate(0, 0); }
+    @keyframes tantrumShake {
+      0%   { transform: translate(0, 0) rotate(0deg); }
+      10%  { transform: translate(-8px, -3px) rotate(-3deg); }
+      20%  { transform: translate(8px, 3px) rotate(3deg); }
+      30%  { transform: translate(-10px, -4px) rotate(-5deg); }
+      40%  { transform: translate(10px, 4px) rotate(5deg); }
+      50%  { transform: translate(-8px, -2px) rotate(-3deg); }
+      60%  { transform: translate(8px, 2px) rotate(3deg); }
+      70%  { transform: translate(-6px, -1px) rotate(-2deg); }
+      80%  { transform: translate(6px, 1px) rotate(2deg); }
+      90%  { transform: translate(-4px, 0px) rotate(-1deg); }
+      100% { transform: translate(0, 0) rotate(0deg); }
     }
 
   </style>
